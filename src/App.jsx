@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  </div>
-  )
-}
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
+};
 
-export default App
+export default App;

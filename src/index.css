@@ -1,1 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 @import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --navbar-height: 2.375rem;
+}
+
+@theme {
+  --font-geist: "Geist", sans-serif;
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+
+
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+
+
+  --background-image-conic-gradient: conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876);
+  --background-image-hero: url('assets/hero/hero.jpg');
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white font-geist-mono;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]
+  }
+
+  .h1 {
+    @apply font-geist-mono text-2xl font-semibold uppercase leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem];
+  }
+
+  .h2 {
+    @apply text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-tight;
+
+  }
+}
