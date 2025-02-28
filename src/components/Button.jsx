@@ -1,7 +1,7 @@
 import React from "react";
 
 const Button = ({ svg, children, className }) => {
-  const classes = `relative uppercase overflow-hidden bg-background font-mono font-semibold border border-neutral-600 rounded-lg pointer-events-none inline-flex h-11 w-26 ${
+  const classes = `relative uppercase overflow-hidden bg-background font-mono border border-neutral-600 rounded-lg pointer-events-none inline-flex  ${
     className ? className : ""
   }`;
 

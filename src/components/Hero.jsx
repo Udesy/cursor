@@ -1,16 +1,16 @@
 import React from "react";
-import { hero, Window } from "../assets";
+import { demo, hero, Window } from "../assets";
 import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="relative" id="hero">
-      <div className="relative top-[8rem] flex justify-center items-center">
-        <div className="relative z-1 mx-5">
+    <div className="relative max-h-screen" id="hero">
+      <div className="relative top-[8rem] flex justify-center items-center overflow-hidden">
+        <div className="relative z-1 mx-5 aspect-square">
           <img
             src={hero}
             alt="hero"
-            className="rounded-[1.2rem] max-h-[41rem] w-full"
+            className="rounded-[1.2rem] max-h-[40rem] w-screen scale-1.2"
           />
         </div>
         <div className="absolute z-2 top-[2rem] text-center flex flex-col gap-5 justify-center items-center">
@@ -25,17 +25,27 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex gap-5">
+          <div className="flex gap-5 items-center">
             <Button
-              className="bg-white text-black flex items-center w-auto p-7"
-              svg={<Window />}
+              className="bg-white text-black flex items-center w-auto p-7 font-semibold text-[1.1rem]"
+              svg={<Window className="size-5" />}
             >
               Download for Windows
             </Button>
-            <Button className="bg-white text-black w-auto flex items-center p-7">
+            <Button className="bg-white text-black w-auto flex items-center p-7 font-semibold text-[1.1rem]">
               All downloads
             </Button>
           </div>
+        </div>
+
+        <div className="absolute z-10 overflow-hidden top-[28rem] pointer-events-none">
+          <img
+            src={demo}
+            alt="demo"
+            width={1400}
+            height={1200}
+            className="object-cover w-[80rem] h-[12rem] object-top rounded-t-lg"
+          />
         </div>
       </div>
     </div>

@@ -16,22 +16,26 @@ const Header = () => {
             className="relative flex w-fit items-center gap-0.5 overflow-hidden lg:px-3 left-[2rem]"
             href="/"
           >
-            <div className="pointer-events-none relative -ml-0.5 size-6 mix-blend-multiply dark:mix-blend-lighten lg:-ml-1 lg:mr-px lg:size-8">
+            <div className="relative -ml-0.5 w-6 h-6 lg:-ml-1 lg:mr-px lg:w-8 lg:h-8">
               <video
                 id="logo-video"
                 ref={videoRef}
                 onMouseOver={(event) => event.target.play()}
                 onMouseOut={(event) => event.target.pause()}
                 src={video}
-                width={32}
-                height={32}
+                width="100%"
+                height="100%"
                 preload="auto"
                 muted
-                autoPlay="auto"
+                autoPlay
                 playsInline
+                className="object-cover"
               />
             </div>
-            <Logo className="h-[13px] text-white lg:h-[17px]" fill="#ffffff" />
+            <Logo
+              className="h-[13px] text-white lg:h-[17px] font-semibold"
+              fill="#ffffff"
+            />
           </a>
           <ul className="col-start-2 gap-10 px-4 font-geist-mono font-semibold uppercase -tracking-tight text-neutral-900 dark:text-neutral-200 hidden left-0 lg:flex">
             {navigation.map((item) => (
