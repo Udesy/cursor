@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
-import { logo, video, Window } from "../assets";
+import { logodark, logolight, Window } from "../assets";
 import Logo from "../assets/nav/Logo";
 import { navigation } from "../constant";
 import Button from "./Button";
 
 const Header = () => {
   const videoRef = useRef(null);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   return (
-    <div className="fixed top-4 z-50 w-full lg:top-6 bg-background h-16 rounded-xl">
+    <div className="fixed top-4 z-50 w-full lg:top-6 bg-background dark:bg-foreground h-16 rounded-xl">
       <div className="realtive max-w-[1490px]">
         <div className="relative flex items-center justify-between top-[0.70rem]">
           <a
@@ -16,25 +17,24 @@ const Header = () => {
             className="relative flex w-fit items-center gap-0.5 overflow-hidden lg:px-3 left-[2rem]"
             href="/"
           >
-            <div className="relative -ml-0.5 w-6 h-6 lg:-ml-1 lg:mr-px lg:w-8 lg:h-8">
+            <div className="pointer-events-none relative -ml-0.5 size-6 mix-blend-multiply dark:mix-blend-lighten lg:-ml-1 lg:mr-px lg:size-8">
               <video
                 id="logo-video"
                 ref={videoRef}
                 onMouseOver={(event) => event.target.play()}
                 onMouseOut={(event) => event.target.pause()}
-                src={video}
-                width="100%"
-                height="100%"
+                src={theme === "dark" ? logodark : logolight}
+                width={32}
+                height={32}
                 preload="auto"
                 muted
-                autoPlay
+                autoPlay="auto"
                 playsInline
-                className="object-cover"
               />
             </div>
             <Logo
-              className="h-[13px] text-white lg:h-[17px] font-semibold"
-              fill="#ffffff"
+              className="h-[13px] text-black dark:text-white lg:h-[17px] font-semibold"
+              fill={theme === "dark" ? "#ffffff" : "#000000"}
             />
           </a>
           <ul className="col-start-2 gap-10 px-4 font-geist-mono font-semibold uppercase -tracking-tight text-neutral-900 dark:text-neutral-200 hidden left-0 lg:flex">
@@ -51,9 +51,11 @@ const Header = () => {
           </ul>
 
           <div className="relative flex gap-2">
-            <Button className="h-12 w-26">Sign in</Button>
+            <Button className="h-12 w-26 text-black dark:text-white">
+              Sign in
+            </Button>
             <Button
-              className="text-black bg-foreground h-12 w-32"
+              className="h-12 w-32 bg-black dark:bg-white text-white dark:text-black"
               svg={<Window />}
             >
               Download

@@ -1,9 +1,10 @@
 import React from "react";
 
-const Button = ({ svg, children, className }) => {
-  const classes = `relative uppercase overflow-hidden bg-background font-mono border border-neutral-600 rounded-lg pointer-events-none inline-flex  ${
+const Button = ({ svg, children, className, px }) => {
+  const classes = `relative uppercase overflow-hidden font-mono border border-neutral-600 rounded-lg pointer-events-none inline-flex h-11 w-fit ${
     className ? className : ""
-  }`;
+  }
+  ${px ? `px-${px}` : "px-4"}`;
 
   const svgButton = () => (
     <div className={`flex items-center gap-3 justify-center ${classes}`}>
@@ -13,7 +14,7 @@ const Button = ({ svg, children, className }) => {
   );
 
   const textButton = () => (
-    <div className={`flex items-center gap-2 justify-center ${classes}`}>
+    <div className={`flex items-center justify-center ${classes}`}>
       <a>{children}</a>
     </div>
   );

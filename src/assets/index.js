@@ -1,5 +1,6 @@
 import logo from "./nav/placeholder-logo.webp";
-import video from "./nav/logo-black.mp4";
+import logodark from "./nav/logo-black.mp4";
+import logolight from "./nav/logo-white.mp4";
 import Window from "./Window";
 import hero from "./hero/hero.jpg";
 import demo from "./hero/watch-demo.jpg";
@@ -18,10 +19,14 @@ import video3 from "./features/video-3.mp4";
 import card1 from "./app-card/card1.mp4";
 import card2 from "./app-card/card2.mp4";
 import card3 from "./app-card/card3.mp4";
+import cup from "./blog/cup.svg";
+import user from "./blog/user.jpg";
+import footerlogo from "./footer/logo-dark.png";
 
 export {
   logo,
-  video,
+  logodark,
+  logolight,
   Window,
   hero,
   demo,
@@ -40,4 +45,7 @@ export {
   card1,
   card2,
   card3,
+  cup,
+  user,
+  footerlogo,
 };

@@ -27,12 +27,12 @@ const Hero = () => {
 
           <div className="flex gap-5 items-center">
             <Button
-              className="bg-white text-black flex items-center w-auto p-7 font-semibold text-[1.1rem]"
+              className="bg-white text-black flex items-center font-semibold text-[1.1rem] px-2.5 py-2 h-15"
               svg={<Window className="size-5" />}
             >
               Download for Windows
             </Button>
-            <Button className="bg-white text-black w-auto flex items-center p-7 font-semibold text-[1.1rem]">
+            <Button className="bg-white dark:bg-black text-black dark:text-white w-auto flex items-center font-semibold text-[1.1rem] px-2.5 py-3.5 h-15">
               All downloads
             </Button>
           </div>

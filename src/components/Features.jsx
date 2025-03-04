@@ -6,14 +6,14 @@ const Features = () => {
   const videoRef = useRef(null);
 
   return (
-    <div className=" relative mt-20">
+    <div className=" relative my-20">
       {features.map((item) => (
         <div className="flex flex-col justify-center items-center gap-10 mt-30">
           <div className="relative">
-            <h3 className="text-[3.3rem] font-bold font-geist text-center text-gradient">
+            <h3 className="text-[3.3rem] font-bold font-geist text-center text-gradient-light dark:text-gradient-dark">
               {item.title}
             </h3>
-            <p className=" text-[1.4rem] max-w-[48rem] text-center">
+            <p className=" text-[1.4rem] max-w-[48rem] text-center text-black dark:text-white">
               {item.text}
             </p>
           </div>

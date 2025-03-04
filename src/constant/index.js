@@ -138,3 +138,83 @@ export const card = [
     videoUrl: card3,
   },
 ];
+
+export const testimonials = [
+  {
+    id: 0,
+    name: "Alex MacCaw",
+    text: "I've been using Cursor for a few months now and it's been a game-changer for me. I've saved so much time and it's just so easy to use.",
+    imageURL: "https://randomuser.me/api/portraits/men/1.jpg",
+    company: "Perplexity",
+  },
+  {
+    id: 1,
+    name: "Sam Whitmore",
+    text: "Cursor is the best AI coding assistant I've ever used. It's so easy to use and it's just so helpful.",
+    imageURL: "https://randomuser.me/api/portraits/women/2.jpg",
+    company: "Replicate",
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    text: " Just started using CUrsor yesterday and I'm already in love with it. It is much better than Vscode and I've already recommended it to my friends.",
+    imageURL: "https://randomuser.me/api/portraits/men/3.jpg",
+    company: "New Computer",
+  },
+  {
+    id: 3,
+    name: "Jane Smith",
+    text: "Cursor is the best Ai editor tool right now. Avoid at your risk.",
+    imageURL: "https://randomuser.me/api/portraits/women/4.jpg",
+    company: "Instacart",
+  },
+  {
+    id: 4,
+    name: "Cory Etzokon",
+    text: "Gonna apply at YC and cursor as a product. I'm sure it will be a success.",
+    imageURL: "https://randomuser.me/api/portraits/men/5.jpg",
+    company: "Varda",
+  },
+  {
+    id: 5,
+    name: "Ben Bernard",
+    text: "Cursor is at least a 2x improvement over Copilot. It's amazing having an AI pair programmer, and is an incredible accelerator for me and my team",
+    imageURL: "https://randomuser.me/api/portraits/men/6.jpg",
+    company: "Vercel",
+  },
+  {
+    id: 6,
+    name: "Morgan Macguire",
+    text: "Cursor is so good, and literally gets better/more feature-rich every couple of weeks.",
+    imageURL: "https://randomuser.me/api/portraits/men/7.jpg",
+    company: "OpenAI",
+  },
+  {
+    id: 7,
+    name: "John Doe",
+    text: "he most useful AI tool that I currently pay for is, hands down, is Cursor. It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard shortcuts, bring- your-own-model...everything is well put together.",
+    imageURL: "https://randomuser.me/api/portraits/men/8.jpg",
+    company: "Weight & Biases",
+  },
+  {
+    id: 8,
+    name: "Andrew Milich",
+    text: "I love writing code and Cursor is a necessity. Cursor is steps ahead of my brain, proposing multi-line edits so I type “tab” more than anything else.",
+    imageURL: "https://randomuser.me/api/portraits/men/9.jpg",
+    company: "Notion",
+  },
+  {
+    id: 9,
+    name: "Wes",
+    text: "I've been using Cursor for a few months now and it's been a game-changer for me. I've saved so much time and it's just so easy to use.",
+    imageURL: "https://randomuser.me/api/portraits/men/10.jpg",
+    company: "New Computer",
+  },
+  {
+    id: 10,
+    name: "Marc Kohlbrugger",
+    text: "After many recommendations, I finally switched from VSC to Cursor and ... wow!It's absolutely incredible. If you like Copilot (or if you don't), you'll be blown away by Cursor.There is no going back. 🤯",
+    imageURL: "https://randomuser.me/api/portraits/men/11.jpg",
+    company: "Internet",
+  },
+];
